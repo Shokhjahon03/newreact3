@@ -1,10 +1,11 @@
 
-import { Fragment } from 'react'
+// import { Fragment } from 'react'
 import './App.css'
 import 'react-router-dom'
 import Header from './components/header/Header'
-import { BrowserRouter, Routes } from 'react-router-dom'
+import { BrowserRouter} from 'react-router-dom'
 import Hero from './components/header/Hero'
+import SectionOne from './components/main/SectionOne'
 
 function App() {
  
@@ -15,6 +16,9 @@ function App() {
       <Header/>
       <Hero/>
      </header>
+     <main>
+      <SectionOne/>
+     </main>
     </BrowserRouter>
   )
 }

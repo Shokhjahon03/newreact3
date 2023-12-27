@@ -1,6 +1,12 @@
 import   { Fragment } from 'react'
 import './hero.css'
 const Hero = () => {
+    let handBack=()=>{
+        window.scrollTo({
+            top:0,
+            behavior:'smooth'
+        })
+    }
   return (
     <Fragment>
       <div className="hero">
@@ -15,6 +21,9 @@ const Hero = () => {
                 </div>
             </div>
         </div>
+        <button onClick={handBack} className='back'>
+        <i className='bx bx-up-arrow-alt'></i>
+        </button>
       </div>
     </Fragment>
   )

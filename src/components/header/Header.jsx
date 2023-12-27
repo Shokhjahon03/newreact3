@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react'
 import './header.css'
 import  {Link} from 'react-router-dom'
 import logo from '../../assets/logo (1).svg'
+
 const Header = () => {
     let [a,setA]=useState(true)
     let [y,setY]=useState(false)
@@ -26,6 +27,8 @@ const Header = () => {
             setA(false)
         }
     }
+   
+   
   return (
     <Fragment>
       <nav className={ y ? 'dnavs': 'navs'}>
